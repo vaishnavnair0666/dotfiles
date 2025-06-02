@@ -1,18 +1,12 @@
-::root {}
-* {
-  font-family: "MesloLGS Nerd Font Mono Bold";
-  font-size: 16px;
-  min-height: 0;
-  font-weight: bold;
-}
-
+@import "colors.css"; 
+/* Rest of your existing CSS */
 window#waybar {
   background: transparent;
-  background-color: var(--background);
-  color: var(--foreground);
+  background-color: @background;
+  color: @foreground;
   transition-property: background-color;
   transition-duration: 0.1s;
-  border-bottom: 1px solid var(--color5);
+  border-bottom: 1px solid @color0;
 }
 
 #window {
@@ -29,8 +23,8 @@ button {
 
 button:hover {
   background: inherit;
-  color: var(--color0);
-  border-top: 2px solid var(--color0);
+  color: @color15;
+  border-top: 2px solid @color15;
 }
 
 #workspaces button {
@@ -39,18 +33,18 @@ button:hover {
 
 #workspaces button.focused {
   background-color: rgba(0, 0, 0, 0.3);
-  color: var(--color1);
-  border-top: 2px solid var(--color1);
+  color: @color5;
+  border-top: 2px solid @color5;
 }
 
 #workspaces button.active {
   background-color: rgba(0, 0, 0, 0.3);
-  color: var(--color0);
-  border-top: 2px solid var(--color0);
+  color: @color6;
+  border-top: 2px solid @color6;
 }
 
 #workspaces button.urgent {
-  background-color: #eb4d4b;
+  background-color: @color1;
 }
 
 #pulseaudio,
@@ -75,37 +69,37 @@ button:hover {
 }
 
 #clock {
-  color: var(--color2);
-  border-bottom: 2px solid var(--color2);
+  color: @color2;
+  border-bottom: 2px solid @color2;
 }
 
 #clock.date {
-  color: var(--color0);
-  border-bottom: 2px solid var(--color0);
+  color: @color6;
+  border-bottom: 2px solid @color6;
 }
 
 #pulseaudio {
-  color: var(--color4);
-  border-bottom: 2px solid var(--color4);
+  color: @color4;
+  border-bottom: 2px solid @color4;
 }
 
 #network {
-  color: var(--color3);
-  border-bottom: 2px solid var(--color3);
+  color: @color9;
+  border-bottom: 2px solid @color9;
 }
 
 #idle_inhibitor {
   margin-right: 12px;
-  color: #7cb342;
+  color: @color2;
 }
 
 #idle_inhibitor.activated {
-  color: var(--color1);
+  color: @color1;
 }
 
 #battery {
-  color: var(--color2);
-  border-bottom: 2px solid var(--color2);
+  color: @color3;
+  border-bottom: 2px solid @color3;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -119,8 +113,9 @@ button:hover {
 }
 
 #custom-vpn {
-  color: var(--color6);
+  color: @color10;
   border-radius: 15px;
   padding-left: 6px;
   padding-right: 6px;
 }
+

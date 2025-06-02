@@ -1,0 +1,15 @@
+{
+  "notification-criteria": [],
+  "widgets": ["dnd", "notifications", "volume", "media-player"],
+  "layer": "overlay",
+  "control-center-position": "top-right",
+  "notification-positions": "top-right",
+  "timeout": 500,
+  "timeout-low": 300,
+  "timeout-critical": 1000,
+  "transition-time": 200,
+  "hide-on-clear": true,
+  "hide-on-dnd": false,
+  "follow-mouse": false,
+  "keyboard-shortcuts": true
+}
