@@ -23,17 +23,10 @@ return {
 	},
 	{
 		"MeanderingProgrammer/render-markdown.nvim",
-		dependencies = {
-			"nvim-treesitter/nvim-treesitter",
-			"nvim-tree/nvim-web-devicons",
-		},
-		opts = {},
-	},
-	{
-		"jghauser/render-markdown.nvim", -- or whatever the plugin is named
+		dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.nvim" }, -- if you use the mini.nvim suite
 		config = function()
 			require("render-markdown").setup({
-				latex = { enabled = false }, -- Disables LaTeX support
+				latex = { enabled = false },
 			})
 		end,
 	},
