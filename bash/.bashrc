@@ -14,3 +14,5 @@ alias rm='[[ $PWD == "/" ]] && echo "🚫 Refusing to delete root directory!" ||
 export PATH=~/.npm-global/bin:/usr/local/bin:/usr/bin
 eval "$(starship init bash)"
 
+
+source /home/vaish/.config/broot/launcher/bash/br
