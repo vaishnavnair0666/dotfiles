@@ -1,0 +1,8 @@
+theme = catppuccin-mocha
+background-opacity = 0.4
+font-family = 
+gtk-titlebar = true
+#custom-shader = ~/shaders/galaxy.glsl
+#custom-shader = ~/shaders/game-crt.glsl
+
+custom-shader = ~/shaders/matrix.glsl
