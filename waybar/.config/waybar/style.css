@@ -1,51 +1,57 @@
-@import "colors.css"; 
-/* Rest of your existing CSS */
+@import "mocha.css"; 
+
+* {
+    font-family: "MesloLGS Nerd Font Mono Bold";
+    font-size: 16px;
+    min-height: 0;
+    font-weight: bold;
+}
+
 window#waybar {
-  background: transparent;
-  background-color: @background;
-  color: @foreground;
-  transition-property: background-color;
-  transition-duration: 0.1s;
-  border-bottom: 1px solid @color0;
-  font-size: 18px;
+    background: transparent;
+    background-color: @crust;
+    color: @overlay0;
+    transition-property: background-color;
+    transition-duration: 0.1s;
+    border-bottom: 1px solid @overlay1;
 }
 
 #window {
-  margin: 8px;
-  padding-left: 8px;
-  padding-right: 8px;
+    margin: 8px;
+    padding-left: 8;
+    padding-right: 8;
 }
 
 button {
-  box-shadow: inset 0 -3px transparent;
-  border: none;
-  border-radius: 0;
+    box-shadow: inset 0 -3px transparent;
+    border: none;
+    border-radius: 0;
 }
 
 button:hover {
-  background: inherit;
-  color: @color15;
-  border-top: 2px solid @color15;
+    background: inherit;
+    color: @mauve;
+    border-top: 2px solid @mauve;
 }
 
 #workspaces button {
-  padding: 0 4px;
+    padding: 0 4px;
 }
 
 #workspaces button.focused {
-  background-color: rgba(0, 0, 0, 0.3);
-  color: @color5;
-  border-top: 2px solid @color5;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: @rosewater;
+    border-top: 2px solid @rosewater;
 }
 
 #workspaces button.active {
-  background-color: rgba(0, 0, 0, 0.3);
-  color: @color6;
-  border-top: 2px solid @color6;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: @mauve;
+    border-top: 2px solid @mauve;
 }
 
 #workspaces button.urgent {
-  background-color: @color1;
+    background-color: #eb4d4b;
 }
 
 #pulseaudio,
@@ -70,53 +76,52 @@ button:hover {
 }
 
 #clock {
-  color: @color2;
-  border-bottom: 2px solid @color2;
+    color: @maroon;
+    border-bottom: 2px solid @maroon;
 }
 
 #clock.date {
-  color: @color6;
-  border-bottom: 2px solid @color6;
+    color: @mauve;
+    border-bottom: 2px solid @mauve;
 }
 
 #pulseaudio {
-  color: @color4;
-  border-bottom: 2px solid @color4;
+    color: @blue;
+    border-bottom: 2px solid @blue;
 }
 
 #network {
-  color: @color9;
-  border-bottom: 2px solid @color9;
+    color: @yellow;
+    border-bottom: 2px solid @yellow;
 }
 
 #idle_inhibitor {
-  margin-right: 12px;
-  color: @color2;
+    margin-right: 12px;
+    color: #7cb342;
 }
 
 #idle_inhibitor.activated {
-  color: @color1;
+    color: @red;
 }
 
 #battery {
-  color: @color3;
-  border-bottom: 2px solid @color3;
+    color: @green;
+    border-bottom: 2px solid @green;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
-  margin-left: 0;
+.modules-left>widget:first-child>#workspaces {
+    margin-left: 0;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
-  margin-right: 0;
+.modules-right>widget:last-child>#workspaces {
+    margin-right: 0;
 }
 
 #custom-vpn {
-  color: @color10;
-  border-radius: 15px;
-  padding-left: 6px;
-  padding-right: 6px;
+    color: @lavender;
+    border-radius: 15px;
+    padding-left: 6px;
+    padding-right: 6px;
 }
-
