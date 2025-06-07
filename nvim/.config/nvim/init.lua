@@ -36,5 +36,6 @@ require("lazy").setup({
 --require("plugins.config.keymaps")
 --require("plugins.config.treesitter")
 --require("plugins.config.catppuccin")
+-- Load configurations
 -- Ensure Neovim sees the installed binaries
 vim.env.PATH = vim.env.PATH .. ':' .. '/usr/bin'  -- Default binary path on Linux

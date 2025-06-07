@@ -8,16 +8,10 @@ export ZSH="$HOME/.zsh"
 export ZINIT_HOME="$HOME/.local/share/zinit/zinit.git"
 
 # Pywal colors (if available)
-[ -f "$HOME/.cache/wal/colors.zsh" ] && source "$HOME/.cache/wal/colors.zsh"
+#[ -f "$HOME/.cache/wal/colors.zsh" ] && source "$HOME/.cache/wal/colors.zsh"
 
 # Initialize Zinit plugin manager
 source "${ZINIT_HOME}/zinit.zsh"
-
-# Plugins
-zinit light zdharma-continuum/fast-syntax-highlighting
-zinit light zsh-users/zsh-autosuggestions
-zinit light zsh-users/zsh-completions
-zinit light romkatv/powerlevel10k
 
 # Load custom shell modules
 for file in $ZSH/*.zsh; do
@@ -72,6 +66,12 @@ SAVEHIST=100000            # Max history in file
 
 
 
+
+# Plugins
+zinit light zdharma-continuum/fast-syntax-highlighting
+zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-completions
+zinit light romkatv/powerlevel10k
 
 
 

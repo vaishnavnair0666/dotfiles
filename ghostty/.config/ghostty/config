@@ -1,6 +1,7 @@
 
 theme = catppuccin-mocha
-background-opacity = 0.9
+background = "#000000"
+background-opacity = 0.5
 font-family = 
 gtk-titlebar = true
 #custom-shader = ~/shaders/galaxy.glsl
