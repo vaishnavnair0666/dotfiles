@@ -4,4 +4,5 @@ alias nv='nvim'
 alias reload!='source ~/.zshrc'
 alias vim="nvim"
 alias t="tmux"
-alias ls="exa --icons"  # Better `ls` (install `exa` first)
+alias e="exit"
+alias ls="exa --icons"  
