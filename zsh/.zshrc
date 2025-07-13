@@ -53,8 +53,8 @@ setopt SHARE_HISTORY        # Write & import history on every command
 setopt INC_APPEND_HISTORY   # Append history incrementally (instead of on exit)
 setopt EXTENDED_HISTORY     # Save timestamps
 HISTFILE=~/.zsh_history     # History file location
-HISTSIZE=100000            # Max history in memory
-SAVEHIST=100000            # Max history in file
+HISTSIZE=1000            # Max history in memory
+SAVEHIST=1000            # Max history in file
 
 
 
