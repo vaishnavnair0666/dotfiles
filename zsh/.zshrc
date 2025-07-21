@@ -25,6 +25,8 @@ done
 precmd() {
   print -Pn "\e]0;%n@%m: %~\a"
 }
+# All EXPORTS 
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # Keybinds and completions
 bindkey -e

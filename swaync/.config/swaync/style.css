@@ -1,12 +1,7 @@
 /* Catppuccin Mocha Theme */
-@define-color text rgb(205, 214, 244);
-@define-color base rgb(30, 30, 46);
-@define-color base-alpha rgba(30, 30, 46, 0.85);
-@define-color surface rgb(49, 50, 68);
-@define-color accent rgba(180, 190, 254, 0.85);
-@define-color overlay rgb(24, 24, 37);
-@define-color subtext rgb(108, 112, 134);
+@import url("/home/vaish/.config/swaync/colors.css");
 
+@define-color base-alpha rgba(30, 30, 46, 0.85);
 .notification-row {
   transition: all 200ms ease;
   outline: none;
@@ -25,8 +20,8 @@
 .notification-row:focus .notification,
 .notification-row:hover .notification {
   box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.5);
-  border: 0px solid @accent;
-  background: @surface;
+  border: 0px solid @color4;
+  background: @color8;
 }
 
 .control-center .notification {
@@ -53,8 +48,8 @@
 }
 
 .close-button {
-  background: @surface;
-  color: @text;
+  background: @color8;
+  color: @foreground;
   text-shadow: none;
   padding: 0;
   border-radius: 100%;
@@ -68,7 +63,7 @@
 
 .close-button:hover {
   box-shadow: none;
-  background: @subtext;
+  background: @color7;
   transition: all 0.15s ease-in-out;
   border: none;
 }
@@ -78,15 +73,15 @@
   padding: 4px;
   margin: 0;
   box-shadow: none;
-  background: @surface;
-  border: 2px solid @accent;
-  color: @text;
+  background: @color8;
+  border: 2px solid @color4;
+  color: @foreground;
 }
 
 .notification-default-action:hover,
 .notification-action:hover {
   -gtk-icon-effect: none;
-  background: @surface;
+  background: @color8;
 }
 
 .notification-default-action {
@@ -110,12 +105,12 @@
 
 .notification-action:last-child {
   border-bottom-right-radius: 8px;
-  border-right: 1px solid @accent;
+  border-right: 1px solid @color4;
 }
 
 .body-image {
   margin-top: 6px;
-  background-color: @text;
+  background-color: @foreground;
   border-radius: 8px;
 }
 
@@ -123,7 +118,7 @@
   font-size: 16px;
   font-weight: bold;
   background: transparent;
-  color: @text;
+  color: @foreground;
   text-shadow: none;
 }
 
@@ -131,7 +126,7 @@
   font-size: 16px;
   font-weight: bold;
   background: transparent;
-  color: @text;
+  color: @foreground;
   text-shadow: none;
   margin-right: 18px;
 }
@@ -140,54 +135,54 @@
   font-size: 15px;
   font-weight: normal;
   background: transparent;
-  color: @text;
+  color: @foreground;
   text-shadow: none;
 }
 
 .top-action-title {
-  color: @text;
+  color: @foreground;
   text-shadow: none;
 }
 
 .control-center-clear-all {
-  color: @text;
+  color: @foreground;
   text-shadow: none;
-  background: @base;
-  border: 2px solid @accent;
+  background: @background;
+  border: 2px solid @color4;
   box-shadow: none;
   border-radius: 8px;
 }
 
 .control-center-clear-all:hover {
-  background: @surface;
+  background: @color8;
 }
 
 .control-center-dnd {
   border-radius: 8px;
-  background: @base;
-  border: 1px solid @accent;
+  background: @background;
+  border: 1px solid @color4;
   box-shadow: none;
 }
 
 .control-center-dnd:checked {
-  background: @accent;
+  background: @color4;
 }
 
 .control-center-dnd slider {
-  background: @base;
+  background: @background;
   border-radius: 8px;
 }
 
 .control-center {
-  background: @base-alpha;
+  background: @background-alpha;
   border-radius: 10px;
   background-clip: border-box;
   padding: 4px;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3),
               0 1px 3px 1px rgba(0, 0, 0, 0.7),
               0 2px 6px 2px rgba(0, 0, 0, 0.3);
-  color: @text;
-  border: 2px solid @accent;
+  color: @foreground;
+  border: 2px solid @color4;
 }
 
 .control-center-list {
@@ -209,15 +204,15 @@
 }
 .widget-title > button {
   font-size: initial;
-  color: @text;
+  color: @foreground;
   text-shadow: none;
-  background: @base;
-  border: 2px solid @accent;
+  background: @background;
+  border: 2px solid @color4;
   box-shadow: none;
   border-radius: 8px;
 }
 .widget-title > button:hover {
-  background: @surface;
+  background: @color8;
 }
 
 .widget-dnd {
@@ -227,17 +222,17 @@
 .widget-dnd > switch {
   font-size: initial;
   border-radius: 8px;
-  background: @base;
-  border: 1px solid @accent;
+  background: @background;
+  border: 1px solid @color4;
   box-shadow: none;
 }
 .widget-dnd > switch:checked {
-  background: @accent;
+  background: @color4;
 }
 .widget-dnd > switch slider {
-  background: @base;
+  background: @background;
   border-radius: 8px;
-  border: 1px solid @text;
+  border: 1px solid @foreground;
 }
 
 .widget-label {
@@ -250,10 +245,10 @@
 .widget-mpris-player {
   padding: 8px;
   margin: 8px;
-  background-color: @base;
+  background-color: @background;
   border-radius: 8px;
-  border: 2px solid @accent;
-  color: @text;
+  border: 2px solid @color4;
+  color: @foreground;
 }
 .widget-mpris-title {
   font-weight: bold;
@@ -262,3 +257,4 @@
 .widget-mpris-subtitle {
   font-size: 1.1rem;
 }
+
