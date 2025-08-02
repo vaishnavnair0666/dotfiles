@@ -54,7 +54,7 @@ window {
 }
 
 #input * {
-  outline: 4px solid @color1!important;
+  outline: 4px solid @color1 ;
 }
 
 /* Text */
@@ -83,5 +83,5 @@ window {
 }
 
 #entry:drop(active) {
-  background-color: @color7!important;
+  background-color: @color7 ;
 }
