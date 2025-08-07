@@ -16,14 +16,14 @@ special = wal["special"]
 transparent = "#00000000"
 
 # Statusbar
-c.colors.statusbar.normal.bg = transparent
-c.colors.statusbar.command.bg = transparent
+c.colors.statusbar.normal.bg = colors["color0"]
+c.colors.statusbar.command.bg = colors["color0"]
 c.colors.statusbar.command.fg = special["foreground"]
 c.colors.statusbar.normal.fg = colors["color14"]
 c.colors.statusbar.passthrough.fg = colors["color14"]
 c.colors.statusbar.url.fg = colors["color13"]
 c.colors.statusbar.url.success.https.fg = colors["color13"]
-c.colors.statusbar.url.hover.fg = colors["color12"]
+c.colors.statusbar.url.hover.fg = colors["color13"]
 
 # Tabs
 c.colors.tabs.even.bg = transparent
@@ -118,6 +118,8 @@ config.bind('tT', 'config-cycle tabs.position top left')
 config.bind('gJ', 'tab-move +')
 config.bind('gK', 'tab-move -')
 config.bind('gm', 'tab-move')
+config.bind(",p", "set content.private_browsing true ;; message-info 'Private mode ON'")
+config.bind(",P", "set content.private_browsing false ;; message-info 'Private mode OFF'")
 
 # Privacy
 config.set("content.webgl", False, "*")
